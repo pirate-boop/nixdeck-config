@@ -9,7 +9,7 @@ nmtui
 
 # Клонируем конфиг
 echo "Клонируем конфиг..."
-sudo git clone https://github.com/ТВО_НИК/nixdeck-config /etc/nixos/flake
+sudo git clone https://github.com/pirate-boop/nixdeck-config /etc/nixos/flake
 
 # Копируем железо
 echo "Копируем hardware-configuration..."
