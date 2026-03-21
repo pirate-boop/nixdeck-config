@@ -4,7 +4,7 @@
 # АКТИВНЫЙ COMPOSITOR: Niri + Noctalia
 # РЕЗЕРВ: Hyprland (закомментирован внизу)
 #****************************************************************#
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   home.username = "decky";
