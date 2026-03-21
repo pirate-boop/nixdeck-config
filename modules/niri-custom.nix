@@ -20,9 +20,7 @@
       StartLimitBurst = 5;
     };
 
-    installConfig = {
-      WantedBy = [ "graphical-session.target" ];
-    };
+    wantedBy = [ "graphical-session.target" ];
   };
 
   # 2. КОНФИГ NIRI — управляется через home-manager (modules/home.nix)
