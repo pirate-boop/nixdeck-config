@@ -8,7 +8,7 @@
 
 {
   home.username = "decky";
-  home.homeDirectory = "/home/decky";
+  home.homeDirectory = lib.mkForce "/home/decky";
   home.stateVersion = "25.11";
   programs.home-manager.enable = true;
 
