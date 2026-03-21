@@ -19,8 +19,8 @@
   # Положи обои в папку wallpapers/ рядом с flake.nix            #
   # Они скопируются в ~/Pictures/wallpapers автоматически         #
   #****************************************************************#
-  home.file."Pictures/wallpapers" = {
-    source = ../wallpapers;
+  home.file."Pictures/Wallpapers" = {
+    source = ../Wallpapers;
     recursive = true;
   };
 
