@@ -9,7 +9,7 @@
 
   # 2. ТУЛЗЫ (Добавляем сам скрипт)
   environment.systemPackages = with pkgs; [
-    waydroid-script
+    pkgs.waydroid-script
   ];
 
   # 3. СЕТЕВОЙ МОСТ
