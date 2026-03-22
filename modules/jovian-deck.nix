@@ -55,7 +55,7 @@
   jovian.steam = {
     enable = true;
     autoStart = true;
-    user = "decky"; # Основной юзер теперь decky
+    user = "kori"; # Основной юзер теперь decky
     desktopSession = "niri"; # выбор для десктопа
 # Сетевые фиксы для РФ (чтобы Steam не тупил без коннекта)
     environment = {
