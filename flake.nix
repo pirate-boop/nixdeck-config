@@ -28,7 +28,7 @@
   };
 
   outputs = inputs@{ self, nixpkgs, jovian, nur, chaotic, home-manager, ... }: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.NIXDECK = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
