@@ -10,7 +10,7 @@
     # ============================================================#
     # РАБОТА С ФАЙЛАМИ NIX (Пути под Flake) GITHUB                #
     # ============================================================#
-    nixos_rebuild = "cd /etc/nixos/flake && sudo git config --global --add safe.directory /etc/nixos/flake && sudo git pull && sudo nixos-rebuild switch --flake /etc/nixos/flake#NIXDECK";
+    nixos_rebuild = "sudo git -C /etc/nixos/flake config core.editor nano && sudo git config --global --add safe.directory /etc/nixos/flake && cd /etc/nixos/flake && sudo git pull && sudo nixos-rebuild switch --flake /etc/nixos/flake#NIXDECK";
     # ============================================================
     # РАБОТА С ФАЙЛАМИ NIX (Пути под Flake)
     # ============================================================
