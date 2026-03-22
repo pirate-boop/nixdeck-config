@@ -141,22 +141,23 @@
   # Jovian создаёт юзера decky сам — только добавляем группы и шелл
   #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
   users.users.kori = {
-  isNormalUser = true;
-  description  = "Kori";
-  shell        = pkgs.zsh;
-  linger       = true;
-  users.users.decky.extraGroups = [
-    "networkmanager"
-    "wheel"
-    "libvirtd"
-    "input"
-    "video"
-    "render"
-    "seat"
-    "audio"
-    "gamemode"
-    "users"
-  ];
+    isNormalUser = true;
+    description  = "Kori";
+    shell        = pkgs.zsh;
+    linger       = true;
+    extraGroups  = [
+      "networkmanager"
+      "wheel"
+      "libvirtd"
+      "input"
+      "video"
+      "render"
+      "seat"
+      "audio"
+      "gamemode"
+      "users"
+    ];
+  };
   users.users.decky.shell = pkgs.zsh;
   users.users.decky.linger = true;
   #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
@@ -178,5 +179,4 @@
   system.stateVersion = "25.11";
 }
   #****************************************************************#
-
 #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#
