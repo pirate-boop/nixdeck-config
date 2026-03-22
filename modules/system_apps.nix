@@ -27,7 +27,11 @@ let
   # |============================================================| #
   #****************************************************************#
   terminal-apps = with pkgs; [
-    wget git htop fastfetch mission-center
+    wget
+    git
+    htop
+    fastfetch
+    mission-center
     # --- Терминалы ---
     vscodium
     ghostty      # GPU-ускоренный, быстрый, современный
