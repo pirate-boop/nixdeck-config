@@ -25,7 +25,7 @@ in
   #****************************************************************#
   jovian.decky-loader = {
     enable = true;
-    user = "decky";
+    user = "kori";
     stateDir = "/var/lib/decky-loader";
     extraPackages = decky-deps;
   };
