@@ -7,8 +7,8 @@
 { config, pkgs, lib, inputs, ... }:
 
 {
-  home.username = "decky";
-  home.homeDirectory = "/home/decky";
+  home.username = "kori";
+  home.homeDirectory = "/home/kori";
   home.stateVersion = "25.11";
   programs.home-manager.enable = true;
 
