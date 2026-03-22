@@ -140,6 +140,11 @@
 
   # Jovian создаёт юзера decky сам — только добавляем группы и шелл
   #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
+  users.users.kori = {
+  isNormalUser = true;
+  description  = "Kori";
+  shell        = pkgs.zsh;
+  linger       = true;
   users.users.decky.extraGroups = [
     "networkmanager"
     "wheel"
