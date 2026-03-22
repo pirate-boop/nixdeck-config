@@ -41,7 +41,7 @@
           nixpkgs.overlays = [ jovian.overlays.default ];
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.decky = import ./modules/home.nix;
+          home-manager.users.kori = import ./modules/home.nix;
           home-manager.extraSpecialArgs = { inherit inputs; };
         }
       ];
