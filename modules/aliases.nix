@@ -10,11 +10,11 @@
     # ============================================================#
     # РАБОТА С ФАЙЛАМИ NIX (Пути под Flake) GITHUB                #
     # ============================================================#
-    nixos_rebuild = "cd /etc/nixos/flake && sudo git config --global --add safe.directory /etc/nixos/flake && sudo git pull && sudo nixos-rebuild switch --flake /etc/nixos/flake#nixos";
+    nixos_rebuild = "cd /etc/nixos/flake && sudo git config --global --add safe.directory /etc/nixos/flake && sudo git pull && sudo nixos-rebuild switch --flake /etc/nixos/flake#NIXDECK";
     # ============================================================
     # РАБОТА С ФАЙЛАМИ NIX (Пути под Flake)
     # ============================================================
-    rebuild = "sudo nixos-rebuild switch --flake /etc/nixos/flake#nixos";
+    rebuild = "sudo nixos-rebuild switch --flake /etc/nixos/flake#NIXDECK";
     nconf   = "sudo kate /etc/nixos/flake/configuration.nix";
     bnconf  = "sudo cp /etc/nixos/flake/configuration.nix /etc/nixos/flake/configuration.nix.bak";
 
