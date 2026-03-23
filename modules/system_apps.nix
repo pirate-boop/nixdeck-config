@@ -76,6 +76,9 @@ let
     pear-desktop
     vlc
     loupe
+    xfce.thunar
+    xfce.thunar-archive-plugin
+    
   ];
 
   #****************************************************************#
