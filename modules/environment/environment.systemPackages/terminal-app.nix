@@ -6,11 +6,11 @@ with pkgs; [
   mission-center
   # --- Терминалы ---
   vscodium
-  ghostty
-  alacritty
-  kitty
+  # ghostty
+  # alacritty
+  # kitty
   wezterm
-  foot
+  # foot
   tilix
   terminator
 ]
