@@ -16,8 +16,8 @@
   # |============================================================| #
   # | ОБОИ (wallpapers из папки репозитория)                     | #
   # |============================================================| #
-  # Положи обои в папку wallpapers/ рядом с flake.nix            #
-  # Они скопируются в ~/Pictures/wallpapers автоматически         #
+  # Положи обои в папку wallpapers/ рядом с flake.nix              #
+  # Они скопируются в ~/Pictures/wallpapers автоматически          #
   #****************************************************************#
   home.file."Pictures/Wallpapers" = {
     source = ../Wallpapers;
@@ -26,9 +26,9 @@
 
   #****************************************************************#
   # |============================================================| #
-  # | NIRI CONFIG (config.kdl) — АКТИВНЫЙ                       | #
+  # | NIRI CONFIG (config.kdl) — АКТИВНЫЙ                        | #
   # |============================================================| #
-  # Терминал: Mod+T → vscodium                                    #
+  # Терминал: Mod+T → vscodium                                     #
   # Reload shell: Ctrl+Super+Alt+R                                 #
   #****************************************************************#
   xdg.configFile."niri/config.kdl".text = ''
@@ -100,8 +100,14 @@
         position x=0 y=0
     }
 
-    spawn-at-startup "bash" "-c" "while true; do quickshell -p /etc/xdg/quickshell/noctalia-shell/shell.qml; sleep 2; done"
-
+     // spawn-at-startup "bash" "-c" "while true; do quickshell -p /etc/xdg/quickshell/noctalia-shell/shell.qml; sleep 2; done"
+    // Запуск xwayland-satellite (для Steam, Electron, Vesktop и прочего X11-говна)
+    spawn-at-startup "xwayland-satellite"
+    // Запуск Noctalia shell (правильный способ в 2026, без while true и без quickshell -p)
+    spawn-at-startup "qs" "-c" "noctalia-shell"
+    // Если qs не находится — попробуй полный путь из flake (если не запустится — кинь ошибку)
+    // spawn-at-startup "${inputs.noctalia.packages.${pkgs.system}.default}/bin/qs" "-c" "noctalia-shell"
+    
     binds {
         Mod+Shift+Slash { show-hotkey-overlay; }
 
@@ -110,16 +116,18 @@
 
         // === ПРИЛОЖЕНИЯ ===
         Mod+B { spawn "firefox"; }
-        Mod+E { spawn "dolphin"; }
+        Mod+E { spawn "thunar"; }
         Mod+D { spawn "vesktop"; }
         Mod+Z { spawn "ayugram-desktop"; }
-        Mod+S { spawn-sh "quickshell ipc -p /etc/xdg/quickshell/noctalia-shell call launcher toggle"; }
-
+        //Mod+S { spawn-sh "quickshell ipc -p /etc/xdg/quickshell/noctalia-shell call launcher toggle"; }
+        Mod+S { spawn-sh "qs ipc call launcher toggle"; }
         // === SHELL ===
-        Mod+Shift+Escape { spawn-sh "quickshell ipc -p /etc/xdg/quickshell/noctalia-shell call sessionMenu toggle"; }
+        //Mod+Shift+Escape { spawn-sh "quickshell ipc -p /etc/xdg/quickshell/noctalia-shell call sessionMenu toggle"; }
+        Mod+Shift+Escape { spawn-sh "qs ipc call sessionMenu toggle"; }
 
         // === RELOAD SHELL (аналог Hyprland Ctrl+Super+R) ===
-        Ctrl+Mod+Alt+R { spawn-sh "pkill -f noctalia-shell; sleep 0.5; quickshell -p /etc/xdg/quickshell/noctalia-shell/shell.qml &"; }
+        // Ctrl+Mod+Alt+R { spawn-sh "pkill -f noctalia-shell; sleep 0.5; quickshell -p /etc/xdg/quickshell/noctalia-shell/shell.qml &"; }
+        Ctrl+Mod+Alt+R { spawn-sh "pkill -f noctalia-shell; sleep 0.5; quickshell -p /etc/xdg/quickshell/noctalia-shell/shell.qml &"; } 
 
         // === СКРИНШОТЫ ===
         Print { screenshot; }
