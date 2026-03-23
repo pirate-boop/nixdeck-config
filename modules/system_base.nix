@@ -159,7 +159,7 @@
     ];
   };
   # users.users.decky.shell = pkgs.zsh;
-  users.users.decky.linger = true;
+  # users.users.decky.linger = true;
   #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
 
   # РЕЗЕРВ (старый блок — не удалять):
