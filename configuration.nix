@@ -14,8 +14,10 @@
     ./modules/waydroid.nix         # Waydroid
     ./modules/niri-custom.nix      # Noctalia сервис
 
-    ./modules/environment/environment.systemPackages/HEADsystemPackages.nix
-    ./modules/environment/environment.systemPackages/systemPackages.nix
+    ./modules/environment/environment.systemPackages/==systemPackages==.nix
+
+    #./modules/environment/environment.systemPackages/HEADsystemPackages.nix
+    #./modules/environment/environment.systemPackages/systemPackages.nix
     # home.nix подключается через flake.nix (home-manager.users.decky)
   ];
 }
