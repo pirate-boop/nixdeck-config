@@ -4,6 +4,7 @@ with pkgs; [
   htop
   fastfetch
   mission-center
+  # --- Терминалы ---
   vscodium
   ghostty
   alacritty
