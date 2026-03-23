@@ -6,7 +6,7 @@ with pkgs; [
   # kdePackages.kcm_flatpak      # НЕ СУЩЕСТВУЕТ В NIXPKGS
   # kdePackages.flatpak-kcm      # Flatpak Permissions Management KCM
   # kdePackages.discover         # Helps you find and install applications, games, and tools
-  kdePackages.kate
+  kdePackages.kate               # Advanced text editor
   # kdePackages.dolphin          # File manager by KDE
   # kdePackages.dolphin-plugins  # Plugins for Dolphin
 ]
