@@ -158,7 +158,7 @@
       "users"
     ];
   };
-  users.users.decky.shell = pkgs.zsh;
+  # users.users.decky.shell = pkgs.zsh;
   users.users.decky.linger = true;
   #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>#
 
