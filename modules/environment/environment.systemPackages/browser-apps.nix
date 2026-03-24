@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 with pkgs; [
   firefox     # Лисица, открытый
   chromium    # Хром без Google
