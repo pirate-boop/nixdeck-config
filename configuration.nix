@@ -13,16 +13,17 @@
     
     ./modules/waydroid.nix         # Waydroid
     ./modules/niri-custom.nix      # Noctalia сервис
-
-    ./modules/environment/environment.systemPackages/==systemPackages==.nix
-
-    #./modules/environment/environment.systemPackages/HEADsystemPackages.nix
-    #./modules/environment/environment.systemPackages/systemPackages.nix
-    # home.nix подключается через flake.nix (home-manager.users.decky)
+    
+    ./modules/environment/environment.systemPackages/==systemPackages==.nix    # Софт, браузеры, терминалы 
+    ./modules/environment/environment.variables/aliases/==aliases==.nix        # Handbook и сокращения
+    
+    
+    
 
     # исключенные из выбора
     # ./modules/system_apps.nix      # Софт, браузеры, терминалы
     # ./modules/aliases.nix          # Handbook и сокращения
+    # ./home.nix подключается через flake.nix (home-manager.users.kori)
   ];
 }
 #****************************************************************#
