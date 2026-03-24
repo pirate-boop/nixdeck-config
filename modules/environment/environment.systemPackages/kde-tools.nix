@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 with pkgs; [
   kdePackages.ark                # File archiver by KDE
   # kdePackages.okular           # KDE document viewer
