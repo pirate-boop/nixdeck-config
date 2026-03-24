@@ -24,6 +24,9 @@
     # ./modules/system_apps.nix      # Софт, браузеры, терминалы
     # ./modules/aliases.nix          # Handbook и сокращения
     # ./home.nix подключается через flake.nix (home-manager.users.kori)
+
+    # --- EMERGENCY BACKUP SECTION (Keep commented) ---
+    # ./modules/backups/old-configuration01/backup(old-configuration)-01.nix 
   ];
 }
 #****************************************************************#
