@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 with pkgs; [
   wget
   git
@@ -7,11 +7,12 @@ with pkgs; [
   mission-center
   # --- Терминалы ---
   vscodium
+  nur.repos.nakido.tabby
   # ghostty
   # alacritty
   # kitty
   wezterm
   # foot
-  tilix
-  terminator
+  # tilix
+  # terminator
 ]
