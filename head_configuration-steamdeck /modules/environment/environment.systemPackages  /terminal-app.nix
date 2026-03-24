@@ -7,7 +7,7 @@ with pkgs; [
   mission-center
   # --- Терминалы ---
   vscodium
-  nur.repos.nakido.tabby
+  inputs.nur.legacyPackages.${pkgs.system}.repos.nakido.tabby
   # ghostty
   # alacritty
   # kitty
