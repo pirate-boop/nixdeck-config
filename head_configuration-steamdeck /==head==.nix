@@ -12,5 +12,6 @@
     # Остальной софт и настройки
     ./modules/environment/environment.systemPackages/==systemPackages==.nix                                                  # Софт, браузеры, терминалы 
     ./modules/environment/environment.variables/aliases/==aliases==.nix                                                      # Handbook и сокращения
+    ./modules/jovian-experiments/==jovian_core==.nix
   ];
 }
