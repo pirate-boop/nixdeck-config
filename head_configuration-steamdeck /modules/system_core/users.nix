@@ -1,3 +1,8 @@
+#****************************************************************#
+# |============================================================| #
+# |USER ACCOUNT                                                | #
+# |============================================================| #
+#****************************************************************#
 { pkgs, ... }: {
   users.users.kori = {
     isNormalUser = true;
@@ -5,8 +10,16 @@
     shell        = pkgs.zsh;
     linger       = true;
     extraGroups  = [
-      "networkmanager" "wheel" "libvirtd" "input" 
-      "video" "render" "seat" "audio" "gamemode" "users"
+      "networkmanager"
+      "wheel"
+      "libvirtd"
+      "input" 
+      "video"
+      "render"
+      "seat"
+      "audio"
+      "gamemode"
+      "users"
     ];
   };
 }
