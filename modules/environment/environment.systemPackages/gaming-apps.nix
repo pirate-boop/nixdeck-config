@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 with pkgs; [
   # steam                  # Digital distribution platform
   lutris                   # Open Source gaming platform for GNU/Linux
