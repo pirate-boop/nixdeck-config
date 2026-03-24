@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   # Импортируем списки прямо тут, иначе environment.systemPackages их не увидит
   decky-deps     = import ./decky-deps.nix     { inherit pkgs; };
