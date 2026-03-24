@@ -2,8 +2,8 @@
 
 {
   imports = [
-    # Твои новые системные модули (networking, users и т.д.)
-    # ./modules/core/networking.nix
+    # # Одной строкой подключаем всё ядро системы
+    ./modules/core/==system_core==.nix
     # ...
 
     # Блок ассоциаций приложений (XDG)
