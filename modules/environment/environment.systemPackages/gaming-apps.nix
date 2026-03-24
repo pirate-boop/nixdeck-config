@@ -6,4 +6,5 @@ with pkgs; [
   protonup-qt              # Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris with this graphical user interface
   bottles                  # Easy-to-use wineprefix manager
   wineWow64Packages.stable # Open Source implementation of the Windows API on top of X, OpenGL, and Unix
+  protontricks             # Simple wrapper for running Winetricks commands for Proton-enabled games
 ]
