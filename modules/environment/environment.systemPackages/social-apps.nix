@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 with pkgs; [
   # telegram-desktop
   ayugram-desktop
