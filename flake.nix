@@ -32,7 +32,7 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, jovian, nur, chaotic, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, jovian, nur, chaotic, home-manager, illogical-flake, ... }: {
     nixosConfigurations.NIXDECK = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
