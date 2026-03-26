@@ -3,7 +3,7 @@
 {
   imports = [
     # # Одной строкой подключаем всё ядро системы
-    ./modules/core/==system_core==.nix
+    ./modules/system_core/==system_core==.nix
     # ...
 
     # Блок ассоциаций приложений (XDG)
